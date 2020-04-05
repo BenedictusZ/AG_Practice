@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/SeqQueue/SeqQueue.c
+SeqQueue.h
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/SeqQueue/SeqQueue.h
+
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/SeqQueue/SeqQueue.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/SeqQueue/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+SeqQueue.h
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/SeqQueue/SeqQueue.h
+

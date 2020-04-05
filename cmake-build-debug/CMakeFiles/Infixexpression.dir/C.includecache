@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/Infixexpression/Ls.h
+
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/Infixexpression/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Ls.h
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/Infixexpression/Ls.h
+

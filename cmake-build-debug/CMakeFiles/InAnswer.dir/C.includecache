@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/InfixexpressionAnswer/L.h
+stdlib.h
+-
+stdio.h
+-
+
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/InfixexpressionAnswer/main.c
+stdio.h
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/InfixexpressionAnswer/stdio.h
+stdlib.h
+-
+string.h
+-
+L.h
+C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/InfixexpressionAnswer/L.h
+

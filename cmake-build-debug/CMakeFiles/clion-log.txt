@@ -1,0 +1,4 @@
+D:\Software\apps\CLion\ch-0\201.6668.10\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=D:/Software/Qt/Tools/mingw730_64/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/Software/Qt/Tools/mingw730_64/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" "C:\Users\mozhe\Desktop\C++ Direction Class\AG-Practice"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug
