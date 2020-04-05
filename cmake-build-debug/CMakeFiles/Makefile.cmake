@@ -53,4 +53,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/InAnswer.dir/DependInfo.cmake"
   "CMakeFiles/NearMatch.dir/DependInfo.cmake"
   "CMakeFiles/Infixexpression.dir/DependInfo.cmake"
+  "CMakeFiles/BinaryTree.dir/DependInfo.cmake"
   )

@@ -12,3 +12,5 @@ add_executable(NearMatch NearMatch/main.c "NearMatch/LS.h" "NearMatch/LS.c")
 add_executable(Infixexpression "Infixexpression/main.c" Infixexpression/Ls.c Infixexpression/Ls.h)
 
 add_executable(InAnswer "InfixexpressionAnswer/L.c" "InfixexpressionAnswer/main.c")
+
+add_executable(BinaryTree "BinaryNode/main.c")

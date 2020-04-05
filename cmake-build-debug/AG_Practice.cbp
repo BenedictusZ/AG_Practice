@@ -207,6 +207,42 @@
 					<DistClean command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="BinaryTree">
+				<Option output="C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/BinaryTree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Software/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Software/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Software/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinaryTree"/>
+					<CompileFile command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BinaryTree/fast">
+				<Option output="C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/BinaryTree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Software/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Software/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Software/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinaryTree/fast"/>
+					<CompileFile command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Software/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/cmake-build-debug"/>
 				<Option type="4"/>
@@ -218,6 +254,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/BinaryNode/main.c">
+			<Option target="BinaryTree"/>
+		</Unit>
 		<Unit filename="C:/Users/mozhe/Desktop/C++ Direction Class/AG-Practice/Infixexpression/Ls.c">
 			<Option target="Infixexpression"/>
 		</Unit>

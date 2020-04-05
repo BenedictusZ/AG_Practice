@@ -174,6 +174,46 @@ Infixexpression/fast:
 	$(MAKE) -f CMakeFiles\Infixexpression.dir\build.make CMakeFiles/Infixexpression.dir/build
 .PHONY : Infixexpression/fast
 
+#=============================================================================
+# Target rules for targets named BinaryTree
+
+# Build rule for target.
+BinaryTree: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 BinaryTree
+.PHONY : BinaryTree
+
+# fast build rule for target.
+BinaryTree/fast:
+	$(MAKE) -f CMakeFiles\BinaryTree.dir\build.make CMakeFiles/BinaryTree.dir/build
+.PHONY : BinaryTree/fast
+
+BinaryNode/main.obj: BinaryNode/main.c.obj
+
+.PHONY : BinaryNode/main.obj
+
+# target to build an object file
+BinaryNode/main.c.obj:
+	$(MAKE) -f CMakeFiles\BinaryTree.dir\build.make CMakeFiles/BinaryTree.dir/BinaryNode/main.c.obj
+.PHONY : BinaryNode/main.c.obj
+
+BinaryNode/main.i: BinaryNode/main.c.i
+
+.PHONY : BinaryNode/main.i
+
+# target to preprocess a source file
+BinaryNode/main.c.i:
+	$(MAKE) -f CMakeFiles\BinaryTree.dir\build.make CMakeFiles/BinaryTree.dir/BinaryNode/main.c.i
+.PHONY : BinaryNode/main.c.i
+
+BinaryNode/main.s: BinaryNode/main.c.s
+
+.PHONY : BinaryNode/main.s
+
+# target to generate assembly for a file
+BinaryNode/main.c.s:
+	$(MAKE) -f CMakeFiles\BinaryTree.dir\build.make CMakeFiles/BinaryTree.dir/BinaryNode/main.c.s
+.PHONY : BinaryNode/main.c.s
+
 Infixexpression/Ls.obj: Infixexpression/Ls.c.obj
 
 .PHONY : Infixexpression/Ls.obj
@@ -456,7 +496,11 @@ help:
 	@echo ... InAnswer
 	@echo ... NearMatch
 	@echo ... Infixexpression
+	@echo ... BinaryTree
 	@echo ... rebuild_cache
+	@echo ... BinaryNode/main.obj
+	@echo ... BinaryNode/main.i
+	@echo ... BinaryNode/main.s
 	@echo ... Infixexpression/Ls.obj
 	@echo ... Infixexpression/Ls.i
 	@echo ... Infixexpression/Ls.s
