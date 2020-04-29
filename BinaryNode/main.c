@@ -6,71 +6,44 @@
 #include <string.h>
 
 
-//TODO æ±‚å¶ç»“ç‚¹çš„æ•°ç›®
-typedef struct BinaryNode {
+//TODO ²¢ºÅ·¨´´½¨¶þ²æÊ÷
+typedef struct BINARYNODE {
 	char ch;
 	struct BINARYNODE *lchild;
 	struct BINARYNODE *rchild;
 } BinaryNode;
 
-//é€’å½’éåŽ†
 void Recursion(BinaryNode *root) {
 	if ( root == NULL) {
 		return;
 	}
-
-	//è®¿é—®æ ¹ç»“ç‚¹
-	Recursion(( BinaryNode * ) root->ch);
-	//å†éåŽ†å·¦å­æ ‘
-	Recursion(( BinaryNode * ) root->lchild);
-	//å†éåŽ†å³å­æ ‘
-	Recursion(( BinaryNode * ) root->rchild);
+	//´òÓ¡Ê÷
+	printf("%c", root->ch);
+	Recursion(root->lchild);
+	Recursion(root->rchild);
 }
 
-void CaculateLeafNum(BinaryNode *root, int *leafNum) {
-	if ( root == NULL) {
-		return;
-	}
+BinaryNode *CreateBinaryTree() {
+	fflush(stdin);  //µÈ´ýÊäÈë½á¹û
+	char ch;
+	scanf("%c", &ch);
 
-	if ( root->lchild == NULL && root->rchild == NULL) {
-		(*leafNum)++;
+	BinaryNode *node;
+	if ( ch == '#' ) {
+		node = NULL;
+	} else {
+		node = ( BinaryNode * ) malloc(sizeof(BinaryNode));
+		node->ch = ch;
+		node->lchild = CreateBinaryTree();
+		node->rchild = CreateBinaryTree();
 	}
-	//å·¦å­æ ‘å¶å­èŠ‚ç‚¹çš„æ•°ç›®
-	CaculateLeafNum(root->lchild, leafNum);
-	//å³å­æ ‘å¶å­ç»“ç‚¹çš„æ•°ç›®
-	CaculateLeafNum(root->rchild, leafNum);
+	return node;
 }
 
-
-void CresteBinaryTree() {
-	//åˆ›å»ºèŠ‚ç‚¹
-	BinaryNode node1 = {'A', NULL, NULL};
-	BinaryNode node2 = {'B', NULL, NULL};
-	BinaryNode node3 = {'C', NULL, NULL};
-	BinaryNode node4 = {'D', NULL, NULL};
-	BinaryNode node5 = {'E', NULL, NULL};
-	BinaryNode node6 = {'F', NULL, NULL};
-	BinaryNode node7 = {'G', NULL, NULL};
-	BinaryNode node8 = {'H', NULL, NULL};
-
-	//å»ºç«‹èŠ‚ç‚¹å…³ç³»
-	node1.lchild = &node2;
-	node1.rchild = &node6;
-	node2.rchild = &node3;
-	node3.lchild = &node4;
-	node3.rchild = &node5;
-	node6.rchild = &node7;
-	node7.lchild = &node8;
-
-	int leafNum = 0;
-	CaculateLeafNum(&node1, &leafNum);
-	printf("leaf node nums:\n", &leafNum);
-
-};
 
 int main() {
-
-	CresteBinaryTree();
-
+	//´´½¨Ê÷
+	BinaryNode *root = CreateBinaryTree();
+	Recursion(root);
 	return 0;
 }
